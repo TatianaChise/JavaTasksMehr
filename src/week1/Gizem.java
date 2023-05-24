@@ -12,6 +12,7 @@ public class Gizem {
         groupMehr.addAll(Arrays.asList("Tetiana","Ruth","Said","Enes","Ferda","Senem",
                 "Gizem","Khurshed","Alexandr","Micheal","Anastasia"));
         System.out.println("Hello");
+        System.out.println("Nice day");
 
     }
 }
