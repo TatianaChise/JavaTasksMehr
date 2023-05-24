@@ -6,12 +6,18 @@ public class Michael {
         System.out.println("Great group Mehr");
         System.out.println("knvlkdsvl");
         identifyOddEven(155);
+        devides(56,2);
+        FINRA();
 
 
     }
 
     public  static  String  identifyOddEven( int  n ) {
-        return  n%2==0 ? "Even" : "odd" ;
+
+       String result= n%2==0 ? "Even" : "odd" ;
+        System.out.println("result = " + result);
+        return  result;
+
     }
 // Second Task ////////////
     public static void devides(int num1, int num2) {
