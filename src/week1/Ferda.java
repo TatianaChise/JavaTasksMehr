@@ -14,12 +14,22 @@ public class Ferda {
         return "Odd";
     }
 
-    public static int division(int a, int b){
-        int count=0;
-        for(int i=a; i<=b; i=i+a){
-            if(a<=b){
-                count=count+1;
+    public static int division(int a, int b) {
+        int count = 0;
+        if (a <=b) {
+
+            for (int i = a; i <= b; i = i + a) {
+                count = count + 1;
+
             }
+        }
+        if (a > b) {
+
+            for (int i = b; i <= a; i = i + b) {
+                count = count + 1;
+
+            }
+
         }
         return count;
     }
