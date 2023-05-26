@@ -33,4 +33,22 @@ public class Ferda {
         }
         return count;
     }
+        public static double division(int a, int b) {
+        double count = 0;
+        if (a <=b) {
+
+            for (int i = a; i <= b; i = i + a) {
+                count = count + 1;
+
+            }
+        }
+        if (a > b) {
+
+            for (int i = b; i <= a; i = i + b) {
+                count = count + 1;
+
+            }
+
+        }
+        return count;
 }
