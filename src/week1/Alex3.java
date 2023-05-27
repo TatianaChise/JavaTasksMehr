@@ -23,6 +23,7 @@ public class Alex3 {
         System.out.println("DivisibleBy5 :"+ divisibleBy5);
         System.out.println("DivisibleBy3 :"+ divisibleBy3);
 
+      //  Bright rays of the sun shone the earth.
 
     }
 
