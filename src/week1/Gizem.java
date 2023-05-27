@@ -13,6 +13,7 @@ public class Gizem {
                 "Gizem","Khurshed","Alexandr","Micheal","Anastasia"));
         System.out.println("Hello");
         System.out.println("Nice day");
+        System.out.println("have good night");
 
     }
 }
