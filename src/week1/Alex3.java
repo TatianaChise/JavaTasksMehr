@@ -23,8 +23,15 @@ public class Alex3 {
         System.out.println("DivisibleBy5 :"+ divisibleBy5);
         System.out.println("DivisibleBy3 :"+ divisibleBy3);
 
-      //  Bright rays of the sun shone the earth.
+        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++");
+          byte a =20;
+          byte b =25;
 
+           a = (byte) (a+b);
+           b = (byte) (a-b);
+           a = (byte) (a-b);
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
     }
 
 
