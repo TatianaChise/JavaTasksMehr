@@ -9,6 +9,7 @@ public class Ferda {
         System.out.println(division(300,2));
         System.out.println(division(300,300));
         System.out.println(division(300.0,5.0));
+        FINRA();
 
     }
     public static String oddOrEven(int a){
@@ -56,4 +57,19 @@ public class Ferda {
             }
             return count;
         }
+
+    public static void FINRA() {
+        String result = "";
+        for (int i = 1; i <= 30; i++) {
+            if (i % 3 == 0 && i % 5 == 0)
+                result += "FINRA ";
+            else if (i % 5 == 0)
+                result += "RA ";
+            else if (i % 3 == 0)
+                result += "FIN ";
+            else
+                result += i + " ";
+        }
+        System.out.println(result);
+    }
 }
