@@ -1,11 +1,9 @@
-package Week02;
+package week2;
 
-public class TatianaWeek2Day1 {
+public class Tatiana {
 
     public static void main(String[] args) {
 
-
-        System.out.println("Week 2 has 3 tasks.");
         System.out.println("Week 2 task:\n #1. Swab two variable values without using a third variable");
 
         int a = 20;
