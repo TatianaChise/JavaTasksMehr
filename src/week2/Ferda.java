@@ -23,17 +23,19 @@ public class Ferda {
         String result15="";
         for (int i = 0; i < 100; i++) {
 
-            if (i % 3 == 0) {
-                result3=result3+i+", ";
-            }
-            if (i % 5 == 0) {
-
-                result5 = result5 + i + ", ";
-            }
             if (i % 3 == 0 && i%5==0) {
 
                 result15 = result15 + i + ", ";
             }
+
+            else if (i % 3 == 0) {
+                result3=result3+i+", ";
+            }
+            else if (i % 5 == 0) {
+
+                result5 = result5 + i + ", ";
+            }
+
 
         }
         System.out.println("Divisible by 3= "+result3.substring(0,result3.length()-2));
