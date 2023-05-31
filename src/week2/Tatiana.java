@@ -61,11 +61,11 @@ public class Tatiana {
         for (int i = 1; i <= N; i++) {
             if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
                 System.out.println("Codility" + "Test" + "Coders");
-            } else if (i % 2 == 0 && i % 3 == 0 && i % 5 != 0) {
+            } else if (i % 2 == 0 && i % 3 == 0 ) {
                 System.out.println("Codility" + "Test");
-            } else if (i % 2 == 0 && i % 5 == 0 && i % 3 != 0) {
+            } else if (i % 2 == 0 && i % 5 == 0) {
                 System.out.println("Codility" + "Coders");
-            }else if (i%3==0 && i%5==0 && i%2 !=0){
+            }else if (i%3==0 && i%5==0 ){
                 System.out.println("Test"+"Coders");
             } else if (i % 2 == 0) {
                 System.out.println("Codility");
