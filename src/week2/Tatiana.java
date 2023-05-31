@@ -41,11 +41,11 @@ public class Tatiana {
         String DivisibleBy5="";
         String  DivisibleBy3="";
         for (int i = 1; i <= 100; i++) {
-            if (i % 3 == 0 && i % 5 == 0 && i % 15 == 0) {
+            if (i % 15 == 0) {
                 DivisibleBy15+=i+" ";
-            } else if (i % 3 == 0 && i % 15 != 0) {
+            } else if (i % 3 == 0 ) {
                 DivisibleBy3+=i+" ";
-            } else if (i % 5 == 0 && i % 15 != 0) {
+            } else if (i % 5 == 0) {
                 DivisibleBy5+=i+" ";
             } else {
                 continue;
