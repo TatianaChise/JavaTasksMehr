@@ -25,7 +25,7 @@ public class Ferda {
 
             if (i % 3 == 0 && i%5==0) {
 
-                result15 = result15 +i + ", ";
+                result15 = result15 + i + ", ";
             }
 
             else if (i % 3 == 0) {
