@@ -64,6 +64,7 @@ str=div3+"\n"+div5+"\n"+div15;
         System.out.println(consecutiveNumbers(30));
         System.out.println(swap(3,8));
         System.out.println(divisibleby3515(60));
+
         divlist(60);
     }
 }

@@ -27,5 +27,6 @@ public class Ruth {
     public static void main(String[] args) {
         System.out.println(finra(50));
         System.out.println(divide(10,3));
+
     }
 }
