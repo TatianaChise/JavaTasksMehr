@@ -8,6 +8,7 @@ public class Tatiana {
             isPrime(31);
             isPrime(100);
             isPrime(63);
+            isPrime(3);
 
 
         }
