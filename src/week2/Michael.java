@@ -9,6 +9,8 @@ public class Michael {
         swapingNumbers(10,20);
         divisibleBy(55);
         printingConsequtiveNumbers(100);
+
+
     }
 
     public  static void swapingNumbers(int a, int b){
