@@ -17,6 +17,12 @@ public class Tatiana {
             isPrime(63);
             isPrime(3);
 
+
+            System.out.println("----------------");
+            System.out.println("Second task of week 3.\n2. Numbers -- Reverse negative number\n" +
+                    "Write a return method that can reverse\n" +
+                    "negative number and return it as int\n");
+
             ReverseNegativeNumber(-56);
 
 
@@ -57,7 +63,7 @@ public class Tatiana {
             //num=0
         }
 
-        System.out.println(reverse);
+        System.out.println("Reverse number is : "+reverse);
 
 
     }
