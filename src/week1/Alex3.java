@@ -8,20 +8,20 @@ public class Alex3 {
         String divisibleBy3="";
         for (int i = 0; i <100 ; i++) {
 
-            if (i % 5 == 0 && i% 3 ==0 && i% 15 == 0 ){
-                divisibleBy15 +=i + "";
+            if (i % 5 == 0 ){
+                divisibleBy15 += i + "";
             } else if (i % 15 !=0 && i % 3 !=0 && i % 5 ==0 ) {
-                divisibleBy5 +=i + "";
+                divisibleBy5 += i + "";
             } else if (i % 15 != 0 && i % 5  !=0 && i % 3 ==0) {
-                divisibleBy3 +=i + "";
+                divisibleBy3 += i + "";
             }else {
               continue;
             }
 
         }
-        System.out.println("DivisibleBy15 :"+ divisibleBy15);
-        System.out.println("DivisibleBy5 :"+ divisibleBy5);
-        System.out.println("DivisibleBy3 :"+ divisibleBy3);
+        System.out.println("DivisibleBy15 :" + divisibleBy15);
+        System.out.println("DivisibleBy5 :" + divisibleBy5);
+        System.out.println("DivisibleBy3 :" + divisibleBy3);
 
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++");
           byte a =20;
@@ -34,7 +34,20 @@ public class Alex3 {
         System.out.println("b = " + b);
     }
 
-
+public static boolean isPrime(int num){
+        boolean isPrime=true;
+        int count =0;
+    for (int i = 1; i <=num ; i++) {
+       if(num% i==0){
+           count++;
+       }
+    }
+    if(count==2){
+        return isPrime;
+    }else{
+        return false;
+    }
+}
 
 
 
