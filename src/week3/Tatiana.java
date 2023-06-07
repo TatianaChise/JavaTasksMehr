@@ -2,13 +2,27 @@ package week3;
 
 public class Tatiana {
         public static void main(String[] args) {
-            isPrime(23);
-            isPrime(25);
+            System.out.println(" ");
+            System.out.println("Hello and Welcome to our week 3 ");
+            System.out.println(" ");
+            System.out.println("First task of week 3.\n1. Numbers -- Prime Number\n" +
+                    "Write a method that can check if a number is\n" +
+                    "prime or not\n" +
+                    "Prime are the numbers that are only divisible byt itself or 1");
+            int num=23;
+            System.out.println(num +" is a prime number : "+ isPrime(num));
             isPrime(-7);
-            isPrime(31);
             isPrime(100);
-            isPrime(63);
-            isPrime(3);
+
+
+
+            System.out.println("----------------");
+            System.out.println("Second task of week 3.\n2. Numbers -- Reverse negative number\n" +
+                    "Write a return method that can reverse\n" +
+                    "negative number and return it as int\n");
+
+           int n=-56;
+            System.out.println("Before reversing : "+ n+"\nAfter reversing : "+ReverseNegativeNumber(n));
 
 
         }
@@ -27,14 +41,32 @@ public class Tatiana {
 
                 }
             }
-            System.out.println(num+" is a prime number" );
+            //System.out.println(num+" is a prime number" );
             return isPrime;
 
         }
 
 
+    public static  int ReverseNegativeNumber(int n){
+        int reverse=0;
+        int reminder;
 
-    }
+        while(n!=0){
+            reminder=n%10; //reminder =6
+            //reminder=5
+
+            reverse=reverse*10+reminder;//reverse=6
+            //60+5=65
+
+            n=n/10; //num=5
+            //num=0
+        }
+        //System.out.println("Reverse number is : "+reverse);
+        return reverse;
+
+        }
+
+}
 /*
 1. Numbers -- Prime Number
 Write a method that can check if a number is
