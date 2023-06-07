@@ -9,13 +9,11 @@ public class Tatiana {
                     "Write a method that can check if a number is\n" +
                     "prime or not\n" +
                     "Prime are the numbers that are only divisible byt itself or 1");
-            isPrime(23);
-            isPrime(25);
+            int num=23;
+            System.out.println(num +" is a prime number : "+ isPrime(num));
             isPrime(-7);
-            isPrime(31);
             isPrime(100);
-            isPrime(63);
-            isPrime(3);
+
 
 
             System.out.println("----------------");
@@ -23,7 +21,8 @@ public class Tatiana {
                     "Write a return method that can reverse\n" +
                     "negative number and return it as int\n");
 
-            ReverseNegativeNumber(-56);
+           int n=-56;
+            System.out.println("Before reversing : "+ n+"\nAfter reversing : "+ReverseNegativeNumber(n));
 
 
         }
@@ -42,31 +41,30 @@ public class Tatiana {
 
                 }
             }
-            System.out.println(num+" is a prime number" );
+            //System.out.println(num+" is a prime number" );
             return isPrime;
 
         }
 
 
-    public static void ReverseNegativeNumber(int num){
+    public static  int ReverseNegativeNumber(int n){
         int reverse=0;
         int reminder;
 
-        while(num!=0){
-            reminder=num%10; //reminder =6
+        while(n!=0){
+            reminder=n%10; //reminder =6
             //reminder=5
 
             reverse=reverse*10+reminder;//reverse=6
             //60+5=65
 
-            num=num/10; //num=5
+            n=n/10; //num=5
             //num=0
         }
+        //System.out.println("Reverse number is : "+reverse);
+        return reverse;
 
-        System.out.println("Reverse number is : "+reverse);
-
-
-    }
+        }
 
 }
 /*
