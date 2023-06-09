@@ -9,6 +9,7 @@ public class Ferda {
     public static void main(String[] args) {
         System.out.println("Frequency of every single character method 1 ="+frequencyOfEverySingleChar("aabbjjhjjhy"));
         System.out.println("Frequency of every single character method 2 ="+frequencyOfEverySingleChar2("aabbjjhjjhy"));
+        System.out.println("They have same letters= "+sameLetter("absc", "csba"));
     }
 
 
@@ -47,7 +48,30 @@ public class Ferda {
 
 
 
-    }}
+    }
+
+    public static boolean sameLetter(String str1, String str2) {
+
+        int count = 0;
+        boolean isSameLetter = true;
+        if (str1.length() == str2.length()) {
+            for (int i = 0; i < str1.length(); i++) {
+
+                for (int j = 0; j < str2.length(); j++) {
+
+                    if (str1.charAt(i) == str2.charAt(j)) {
+                        count = count + 1;
+                    }
+                }
+            }
+            if (count > str1.length()) ;
+            return true;
+
+        }
+        return false;
+    }
+
+}
 
 
 
