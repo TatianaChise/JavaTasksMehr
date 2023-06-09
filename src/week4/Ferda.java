@@ -10,6 +10,7 @@ public class Ferda {
         System.out.println("Frequency of every single character method 1 ="+frequencyOfEverySingleChar("aabbjjhjjhy"));
         System.out.println("Frequency of every single character method 2 ="+frequencyOfEverySingleChar2("aabbjjhjjhy"));
         System.out.println("They have same letters= "+sameLetter("absc", "csba"));
+        System.out.println(removeDuplicates("aahjdhhdjuldl,djs"));
     }
 
 
@@ -70,6 +71,24 @@ public class Ferda {
         }
         return false;
     }
+
+    public static String  removeDuplicates(String str) {
+
+        String res="";
+
+        for (int i = 0; i < str.length(); i++) {
+            if(res.contains(str.charAt(i)+"")){
+                continue;
+            }
+            res=res+str.charAt(i);
+
+
+
+        }
+        return res;
+    }
+
+
 
 }
 
