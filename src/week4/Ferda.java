@@ -10,6 +10,7 @@ public class Ferda {
         System.out.println("Frequency of every single character method 1 ="+frequencyOfEverySingleChar("aabbjjhjjhy"));
         System.out.println("Frequency of every single character method 2 ="+frequencyOfEverySingleChar2("aabbjjhjjhy"));
         System.out.println("They have same letters= "+sameLetter("absc", "csba"));
+        System.out.println("They have same letters= "+sameLetter("dabsc", "csba"));
         System.out.println(removeDuplicates("aahjdhhdjuldl,djs"));
     }
 
@@ -65,8 +66,7 @@ public class Ferda {
                     }
                 }
             }
-            if (count > str1.length()) ;
-            return true;
+            return count == str1.length();//if count == str1.length() return true
 
         }
         return false;
