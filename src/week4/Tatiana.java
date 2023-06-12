@@ -1,5 +1,7 @@
 package week4;
 
+import java.util.Arrays;
+
 public class Tatiana {
     public static void main(String[] args) {
         System.out.println("Week 4,has 3 Tasks");
@@ -11,7 +13,16 @@ public class Tatiana {
 
         System.out.println("\t #2. Task: Same letters\n\tWrite a return method that check if a string is build out of yje same letters as another string.\n\tEX:same(abc,cab);-->true\n\tsame(abc,abb);-->false");
 
+        System.out.println("'abc' and 'cab' have same letters : "+SameLettersString("abc","cab"));
+        System.out.println("'tatiana' and 'titiana' have same letters : "+SameLettersString("tatiana","titiana"));
+        System.out.println("'abc' and 'abb' have the same letters : "+SameLettersString("abc","abb"));
+
+
+        System.out.println("-----------------------------------------------------");
+
         System.out.println("\t #3 Task: Remove Duplicates\n\tWrite a method that can remove the duplicated values from String\n\tEX: removeDup(AAABBBCCC)==>ABC");
+
+
 
     }
 
@@ -35,6 +46,18 @@ public class Tatiana {
         return str1;
     }
 
+
+    public static boolean SameLettersString(String str,String str1) {
+        boolean same = true;
+        char[] a = str.toCharArray();
+        char[] b = str1.toCharArray();
+        Arrays.sort(a);
+        Arrays.sort(b);
+        if (Arrays.equals(a, b)) {
+            return same;
+        }
+        return false;
+    }
 
 
 }
