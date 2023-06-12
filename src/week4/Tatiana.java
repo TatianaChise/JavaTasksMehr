@@ -1,5 +1,6 @@
 package week4;
 
+import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class Tatiana {
@@ -21,6 +22,9 @@ public class Tatiana {
         System.out.println("-----------------------------------------------------");
 
         System.out.println("\t #3 Task: Remove Duplicates\n\tWrite a method that can remove the duplicated values from String\n\tEX: removeDup(AAABBBCCC)==>ABC");
+
+        System.out.println("Letters used for this string are : "+RemoveDuplicates("AAAAGGVRRE"));
+        System.out.println("Letters used for this string are : "+RemoveDuplicates("ggdddderraccbnjggg"));
 
 
 
@@ -58,6 +62,24 @@ public class Tatiana {
         }
         return false;
     }
+
+
+    public static String RemoveDuplicates(String s2) {
+
+        String s3 = "";
+        int count = 0;
+
+        for (int i = 0; i < s2.length(); i++) {
+            char ch = s2.charAt(i);
+            for (int j = 0; j < s2.length(); j++) {
+                if (ch == s2.charAt(j) && !s3.contains(""+s2.charAt(j))) {
+                    s3+=ch+"";
+                }
+            }
+        }
+        return s3;
+    }
+
 
 
 }
