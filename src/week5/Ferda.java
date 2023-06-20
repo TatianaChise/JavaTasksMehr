@@ -4,6 +4,11 @@ public class Ferda {
 
     public static void main(String[] args) {
         System.out.println("uniqueCharacter(\"aaddhhgdhjd;doc\") = " + uniqueCharacter("aaddhhgdhjd;doc"));
+
+
+        System.out.println("reverse(\"ABCD\") = " + reverse("ABCD"));
+
+
     }
 
     /*
@@ -31,6 +36,21 @@ Ex: unique("AAABBBCCCDEF") ==> "DEF";
 
             }
 
+        }
+        return res;
+    }
+
+    /*
+    String -- Reverse
+Write a return method that can reverse String
+Ex: Reverse("ABCD"); ==> DCBA
+     */
+
+    public static String reverse(String word){
+
+        String res="";
+        for (int i = word.length()-1; i >=0; i--) {
+            res=res+word.charAt(i);
         }
         return res;
     }
