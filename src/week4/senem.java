@@ -6,7 +6,7 @@ import java.util.LinkedHashSet;
 public class senem {
     public static String getFrequencyOfChars(String str) {
         StringBuilder result = new StringBuilder();
-        int[] frequency = new int[256];
+        int[] frequency = new int[256]; // Assuming ASCII characters
 
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
