@@ -12,8 +12,8 @@ public class Ferda {
 
 
     public static boolean password(String password) {
-        int lower = 0;
-        int upper = 0;
+        int lowerCase = 0;
+        int upperCase = 0;
         int special = 0;
         int number = 0;
         boolean isValidPassword=true;
@@ -21,10 +21,10 @@ public class Ferda {
         for (int i = 0; i < password.length(); i++) {
 
             if (password.charAt(i) >= 97 && password.charAt(i) <= 122) {
-                lower = lower + 1;
+                lowerCase = lowerCase + 1;
 
             } else if (password.charAt(i) >= 65 && password.charAt(i) <= 90) {
-                upper = upper + 1;
+                upperCase = upperCase + 1;
 
             } else if (password.charAt(i) >= 48 && password.charAt(i) <= 57) {
                 number = number + 1;
@@ -34,7 +34,7 @@ public class Ferda {
             }
 
         }
-        if (lower >= 1 && upper >= 1 && number >= 1 && special >= 1) {
+        if (lowerCase >= 1 && upperCase >= 1 && number >= 1 && special >= 1) {
             return isValidPassword;
         }
         return false;
