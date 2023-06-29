@@ -16,7 +16,7 @@ public class Ruth {
         int[] array={4,20,6,7,7};
         System.out.println(maxNumber(array));
 
-        System.out.println(sumOfDigits("rojn46579jnm"));
+        System.out.println(sumOfDigits("rojn45jnm1"));
 
 
     }
@@ -55,9 +55,8 @@ public static int sumOfDigits(String str){
         int sumOfDigits=0;
         for (int i=0; i<=str.length()-1; i++){
             if (str.charAt(i)>=48 && str.charAt(i)<=57)
-            {
-                sumOfDigits+=(int)str.charAt(i);
-            }
+                sumOfDigits += Integer.parseInt(str.substring(i, (i + 1)));
+
         }
 
         return sumOfDigits;
