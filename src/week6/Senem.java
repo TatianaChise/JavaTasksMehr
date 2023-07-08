@@ -1,6 +1,6 @@
 package week6;
 public class Senem {
-    public static boolean validatePassword(String password) {
+    public static boolean valPassword(String password) {
         if (password.length() < 6 || password.contains(" ")) {
             return false;
         }
@@ -46,7 +46,7 @@ public class Senem {
 
     public static void main(String[] args) {
         String password = "MyPassword123!";
-        boolean isValid = validatePassword(password);
+        boolean isValid = valPassword(password);
         System.out.println("Is password valid? " + isValid);
     }
 }
