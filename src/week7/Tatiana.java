@@ -9,7 +9,10 @@ public class Tatiana {
         System.out.println("Write a method that can find the maximum number from an int Array");
         int[] arr2={34,28,1,20,204,38,92};
         System.out.println("Array_Maxim_number(arr2) = " + Array_Maxim_number(arr2));
-        System.out.println("Array_Minim_number(arr2) = " + Array_Minim_number(arr2));
+        System.out.println("Array_Minim_number(arr2) = " + Array_Minim_number(arr2))
+
+
+
 
 
         System.out.println(" Write a return method that can sort an int array in Ascending order without using the sort method of the Arrays class");
