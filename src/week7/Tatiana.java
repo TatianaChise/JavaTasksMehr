@@ -12,6 +12,9 @@ public class Tatiana {
         System.out.println("Array_Minim_number(arr2) = " + Array_Minim_number(arr2));
 
 
+
+
+
         System.out.println(" Write a return method that can sort an int array in Ascending order without using the sort method of the Arrays class");
         int []arr={4,1,29,301,0,5};
         System.out.println("Array_Sort_Ascending(arr) = " + Arrays.toString(Array_Sort_Ascending(arr)));
