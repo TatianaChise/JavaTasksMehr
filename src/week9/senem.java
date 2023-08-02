@@ -5,6 +5,7 @@ import java.util.List;
 
 public class senem {
     public static void main(String[] args) {
+
         // 1) Array - Concat two arrays
         int[] array1 = {1, 2, 3};
         int[] array2 = {4, 5, 6};
