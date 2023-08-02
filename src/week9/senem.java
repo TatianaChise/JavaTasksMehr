@@ -13,6 +13,7 @@ public class senem {
         int[] resultArray = concatenateArrays(array1, array2);
 
         System.out.println("1) Concat two arrays:");
+
         for (int num : resultArray) {
             System.out.print(num + " ");
         }
